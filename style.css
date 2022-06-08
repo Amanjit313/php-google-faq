@@ -1,9 +1,8 @@
-/* *{
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-} */
-
 .abclist{
   list-style-type: lower-alpha;
+}
+
+span{
+  color: rgba(0, 0, 244, .7);
+  cursor: pointer;
 }
