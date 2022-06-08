@@ -1,14 +1,13 @@
 *{
   font-family: Arial, Helvetica, sans-serif;
+  margin: 0;
+  box-sizing: border-box;
 }
+
+/* Main */
 
 .abclist{
   list-style-type: lower-alpha;
-}
-
-span{
-  color: #3367d6;
-  cursor: pointer;
 }
 
 main{
@@ -16,24 +15,79 @@ main{
   margin: 0 auto;
 }
 
-h1{
+main span{
+  color: #3367d6;
+  cursor: pointer;
+}
+
+main h1{
   font-size: 1.6rem;
   color: #3c4043;
   margin-top: 80px;
 }
 
-h3{
+main h3{
   color: #3c4043;
   margin-top: 60px;
 }
 
-p{
+main p{
   margin: 40px 0px;
   color: rgba(0,0,0,.7);
   font-size: .95rem;
 }
 
-ol{
+main ol{
   color: rgba(0, 0, 0, .7);
   font-size: .95rem;
+}
+
+/* Footer */
+footer{
+  background-color: #f5f5f5;
+  height: 50px;
+}
+
+.footer-container{
+  display: flex;
+  width: 55%;
+  margin: 0 auto;
+  justify-content: space-between;
+  height: 100%;
+}
+
+.footer-link{
+  display: flex;
+  justify-content: center;
+  height: 100%;
+  align-items: center;
+}
+
+.footer-link span{
+  margin-right: 10px;
+  font-size: .7rem;
+  color: rgba(128, 128, 128, .7);
+  cursor: pointer;
+}
+
+.footer-lang{
+  display: flex;
+  align-items: center;
+  height: 100%;
+}
+
+#lang{
+  background-color: white;
+  border: none;
+  border: 1px solid black;
+  width: 200px;
+  border-radius: 2px;
+}
+
+footer i{
+  margin-right: 5px;
+  color: white;
+  background-color: #22ADF7;
+  padding: 3px 6px;
+  border-radius: 1px;
 }
