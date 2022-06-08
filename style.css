@@ -4,15 +4,99 @@
   box-sizing: border-box;
 }
 
-/* Main */
-
-.abclist{
-  list-style-type: lower-alpha;
+/* 
+  Header 
+*/
+header{
+  position: fixed;
+  width: 100%;
+  background-color: white;
+  top: 0;
+  left: 0;
+  z-index: 999;
 }
+
+.title-account{
+  display: flex;
+  justify-content: space-between;
+  margin: 20px 40px;
+  cursor: pointer;
+}
+
+/* Title & Account */
+.title{
+  display: flex;
+  align-items: center;
+  color: rgba(0,0,0,.6);
+}
+
+.title img{
+  width: 5rem;
+}
+
+.title span{
+  font-size: 1.6rem;
+  margin-left: 5px;
+}
+
+header i{
+  padding: 10px;
+  color: rgba(0,0,0,.6);
+  margin-right: 20px;
+}
+
+header i:hover{
+  background-color: rgba(0, 0, 0, .1);
+  padding: 10px;
+  border-radius: 50%;
+}
+
+.account span{
+  padding: 8px 11px;
+  border-radius: 50%;
+  background-color: purple;
+  color: white;
+}
+
+/* Menu */
+.menu{
+  border-bottom: 1px solid lightgray;
+  padding-bottom: 13px;
+}
+
+.menu ul{
+  display: flex;
+  list-style: none;
+}
+
+.menu a{
+  text-decoration: none;
+  cursor: pointer;
+  margin-right: 40px;
+  padding-bottom: 10px;
+}
+
+.noActive{
+  color: rgba(0,0,0,.6);
+}
+
+.active{
+  color: #3367D6;
+  border-bottom: 3px solid #3367D6;
+}
+
+/* 
+  Main 
+*/
 
 main{
   width: 55%;
   margin: 0 auto;
+  margin-top: 200px;
+}
+
+.abclist{
+  list-style-type: lower-alpha;
 }
 
 main span{
@@ -42,7 +126,9 @@ main ol{
   font-size: .95rem;
 }
 
-/* Footer */
+/* 
+  Footer 
+*/
 footer{
   background-color: #f5f5f5;
   height: 50px;

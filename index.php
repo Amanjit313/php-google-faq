@@ -109,27 +109,64 @@ $faq = [
 </head>
 <body>
 
+  <header>
+
+    <!-- Title & Account -->
+    <div class="title-account">
+      <div class="title">
+        <img src="https://www.artandmusicstudios.com/wp-content/uploads/2020/01/google-logo-png-hd-11.png" alt="google">
+        <span>Privacy e Termini</span>
+      </div>
+      <div class="account">
+        <i class="fa-solid fa-list-ul"></i>
+        <span>A</span>
+      </div>
+    </div>
+    <!-- /Title & Account -->
+    
+    <!-- Menu -->
+    <div class="menu">
+      <ul>
+        <li><a href="#" class="noActive">Introduzione</a></li>
+        <li><a href="#" class="noActive">Norme sulla privacy</a></li>
+        <li><a href="#" class="noActive">Termini di servizio</a></li>
+        <li><a href="#" class="noActive">Tecnologie</a></li>
+        <li><a href="#" class="active">Domande frequenti</a></li>
+      </ul>
+    </div>
+    <!-- /Menu -->
+
+  </header>
+
   <main>
+
+    <!-- Database -->
     <?php foreach($faq as $title => $texts) : ?>
       <?php echo $title ?>
       
       <?php foreach($texts as $text) : ?>
         <?php echo $text['subtitle'] , $text['text'] ?>
-      <?php endforeach; ?>
-  
-    <?php endforeach; ?>
+        <?php endforeach; ?>
+        
+        <?php endforeach; ?>
+    <!-- Database -->
+
   </main>
 
   <footer>
+
     <div class="footer-container">
 
+      <!-- Footer Link -->
       <div class="footer-link">
         <span>Google</span>
         <span>Termini su Google</span>
         <span>Privacy</span>
         <span>Termini</span>
       </div>
-
+      <!-- /Footer Link -->
+      
+      <!-- Footer Lang -->
       <div class="footer-lang">
         <i class="fa-solid fa-globe"></i>
         <select name="lang" id="lang">
@@ -139,8 +176,10 @@ $faq = [
           <option value="hindi">Hindi</option>
         </select>
       </div>
+      <!-- Footer Lang -->
 
     </div>
+    
   </footer>
 
 </body>
