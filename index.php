@@ -43,17 +43,20 @@ $faq = [
       'text' => 
 
       "<p>Il tuo account è associato a un paese (o territorio) nei Termini di servizio per poter stabilire due cose:</p>
-
+      
       <ol>
         <li>
           La società consociata Google che offre i servizi, tratta le tue informazioni ed è responsabile del rispetto delle leggi sulla privacy vigenti. Generalmente Google offre i propri servizi per i consumatori tramite una delle due società seguenti:
           <ol class='abclist'>
+            <br>
             <li>
               Google Ireland Limited, se gli utenti sono residenti nello Spazio economico europeo (paesi dell'Unione europea, oltre a Islanda, Liechtenstein e Norvegia) o in Svizzera.
             </li>
+            <br>
             <li>
               Google LLC, con sede negli Stati Uniti, per il resto del mondo.
             </li>
+            <br>
           </ol>
         </li>
       
@@ -105,14 +108,16 @@ $faq = [
 </head>
 <body>
 
-  <?php foreach($faq as $title => $texts) : ?>
-    <?php echo $title ?>
-    
-    <?php foreach($texts as $text) : ?>
-      <?php echo $text['subtitle'] , $text['text'] ?>
+  <main>
+    <?php foreach($faq as $title => $texts) : ?>
+      <?php echo $title ?>
+      
+      <?php foreach($texts as $text) : ?>
+        <?php echo $text['subtitle'] , $text['text'] ?>
+      <?php endforeach; ?>
+  
     <?php endforeach; ?>
-
-  <?php endforeach; ?>
+  </main>
 
 </body>
 </html>

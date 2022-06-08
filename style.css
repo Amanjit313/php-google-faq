@@ -1,8 +1,39 @@
+*{
+  font-family: Arial, Helvetica, sans-serif;
+}
+
 .abclist{
   list-style-type: lower-alpha;
 }
 
 span{
-  color: rgba(0, 0, 244, .7);
+  color: #3367d6;
   cursor: pointer;
+}
+
+main{
+  width: 55%;
+  margin: 0 auto;
+}
+
+h1{
+  font-size: 1.6rem;
+  color: #3c4043;
+  margin-top: 80px;
+}
+
+h3{
+  color: #3c4043;
+  margin-top: 60px;
+}
+
+p{
+  margin: 40px 0px;
+  color: rgba(0,0,0,.7);
+  font-size: .95rem;
+}
+
+ol{
+  color: rgba(0, 0, 0, .7);
+  font-size: .95rem;
 }
