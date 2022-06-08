@@ -126,6 +126,11 @@ main ol{
   font-size: .95rem;
 }
 
+span i{
+  font-size: .7rem;
+  margin-left: 5px;
+}
+
 /* 
   Footer 
 */
